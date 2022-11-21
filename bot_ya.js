@@ -5,6 +5,7 @@
 // @description  Bot for Yandex
 // @author       Elena Soboleva
 // @match        https://ya.ru/*
+// @match        https://yandex.ru/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
@@ -23,6 +24,7 @@ if (btn !== undefined) {
       let link = links[i];
       console.log("Нашел строку" + link);
       link.click();
+      break;
     }
   }
 }
