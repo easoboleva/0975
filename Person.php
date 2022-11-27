@@ -8,8 +8,6 @@ class Person
   private $hp;
   private $mother;
   private $father;
-  private $grandmother;
-  private $grangfather;
 
   function __construct($name, $lastname, $age, $mother = null, $father = null)
   {
@@ -19,8 +17,6 @@ class Person
     $this->hp = 100;
     $this->mother = $mother;
     $this->father = $father;
-    // $this->grandmother = $grandmother;
-    // $this->grandfather = $grandfather;
   }
 
   function sayHi($name)
@@ -49,14 +45,6 @@ class Person
   {
     return $this->father;
   }
-  // function getGrandMother()
-  // {
-  //   return $this->grandmother;
-  // }
-  // function getGrandFather()
-  // {
-  //   return $this->grandfather;
-  // }
 
   function getInfo()
   {
